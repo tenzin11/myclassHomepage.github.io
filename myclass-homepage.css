@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #FADFBC;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 50px 10px rgb(0 0 0 / 20%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 580px;
+  width: 330px;
+  border-radius: 10px;
+  background-color: #E0BECC;
+}
+.box .logo{
+  display: flex;
+  justify-content: center;
+}
+.logo img{
+  height:70px;
+  width: 200px;
+  margin-top: 20px;
+}
+.box .heading p{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+.box .heading #myclass{
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
+.box .heading #sub-heading{
+  letter-spacing: 0.02rem;
+  font-size: 0.90em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.box .form-box{
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+
+}
+
+input[type=text],input[type=password]{
+  background: none;
+  display: flex;
+  height: 30px;
+  width: 300px;
+  border: none;
+  border-bottom: 0.075em solid rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: white;
+  caret-color: black;
+  margin-bottom: 10px;
+  transition: input 1s ease;
+}
+input:focus{
+  outline: none;
+  background: none;
+}
+input[type=submit]{
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  line-height: 2.5em;
+  font-weight: 500;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+}
+input[type=text]:hover,input[type=password]:hover{
+border-bottom-color: red;
+}
+
+input[type=submit]:hover{
+background-color: white;
+color: black;
+}
+
+.box .myinfo{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.box .myinfo span{
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+}
+@media only screen and (min-width:768px) {
+  .box{
+    height: auto;
+  }
+}
